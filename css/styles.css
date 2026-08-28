@@ -72,7 +72,7 @@ body { background: var(--bg); color: var(--ink); }
 }
 @media (min-width: 768px) {
   .intro-columns { flex-direction: row; align-items: flex-start; gap: 80px; }
-  .intro-title-col { flex: 0 0 38%; }
+  .intro-title-col { flex: 0 0 50%; }
   .intro-body-col { flex: 1; }
 }
 
