@@ -52,30 +52,35 @@ body { background: var(--bg); color: var(--ink); }
 }
 .intro-inner {
   max-width: 1200px; width: 100%;
-  display: flex; flex-direction: column; align-items: center; gap: 32px;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 32px;
   opacity: 0; animation: fadeIn 0.8s ease forwards;
 }
-.intro-inner h1 {
-  font-family: var(--sans); font-weight: 700; margin: 0;
-  font-size: clamp(28px, 5vw, 56px); text-align: center; max-width: 900px; line-height: 1.15;
-  opacity: 0; animation: fadeUp 0.8s cubic-bezier(.22,1,.36,1) 0.2s forwards;
-}
-.intro-text {
-  display: grid; grid-template-columns: 1fr; gap: 24px; max-width: 900px; width: 100%;
+.intro-columns {
+  display: flex; flex-direction: column; gap: 32px; width: 100%;
   opacity: 0; animation: fadeUp 0.8s cubic-bezier(.22,1,.36,1) 0.3s forwards;
 }
-.intro-text p {
+.intro-title-col { flex: none; }
+.intro-inner h1 {
+  font-family: var(--sans); font-weight: 700; margin: 0;
+  font-size: clamp(28px, 4.2vw, 48px); text-align: left; line-height: 1.15;
+  opacity: 0; animation: fadeUp 0.8s cubic-bezier(.22,1,.36,1) 0.2s forwards;
+}
+.intro-body-col { display: flex; flex-direction: column; gap: 24px; max-width: 620px; }
+.intro-body-col p {
   margin: 0; font-family: var(--serif); font-weight: 400; color: var(--ink-muted);
   font-size: 15px; line-height: 1.5;
 }
-.intro-text p.lead { grid-column: 1 / -1; }
-.intro-text-col { display: flex; flex-direction: column; gap: 24px; }
-@media (min-width: 768px) { .intro-text { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 768px) {
+  .intro-columns { flex-direction: row; align-items: flex-start; gap: 80px; }
+  .intro-title-col { flex: 0 0 38%; }
+  .intro-body-col { flex: 1; }
+}
 
 .btn-primary {
   font-family: var(--sans); font-weight: 700; font-size: 16px;
   background: #000; color: #fff; border: none; border-radius: 999px;
   padding: 14px 32px; cursor: pointer; transition: background-color .2s;
+  align-self: flex-start;
   opacity: 0; animation: fadeUp 0.8s cubic-bezier(.22,1,.36,1) 0.4s forwards;
 }
 .btn-primary:hover { background: #262626; }
