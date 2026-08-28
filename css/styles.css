@@ -62,7 +62,7 @@ body { background: var(--bg); color: var(--ink); }
 .intro-title-col { flex: none; }
 .intro-inner h1 {
   font-family: var(--sans); font-weight: 700; margin: 0;
-  font-size: clamp(28px, 4.2vw, 48px); text-align: left; line-height: 1.15;
+  font-size: clamp(26px, 3.6vw, 42px); text-align: left; line-height: 1.15; text-wrap: balance;
   opacity: 0; animation: fadeUp 0.8s cubic-bezier(.22,1,.36,1) 0.2s forwards;
 }
 .intro-body-col { display: flex; flex-direction: column; gap: 24px; max-width: 620px; }
