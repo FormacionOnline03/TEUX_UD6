@@ -103,6 +103,7 @@ const RESOURCES = [
     yearContext: "Estos materiales fueron publicados entre 2025 y 2026 por Bloomberg y Harvard Business Review.",
     language: "Inglés",
     relevance: "Estos recursos ofrecen una visión independiente del caso BBVA desde el ámbito periodístico y del análisis empresarial. Bloomberg informa sobre la implantación de ChatGPT en la organización y Harvard Business Review utiliza el caso para reflexionar sobre la adopción de la IA en las empresas. La comparación entre estas publicaciones y las fuentes corporativas permite analizar cómo cambia el relato según el contexto y los objetivos de cada autor.",
+    embedUrl: "https://www.bloomberg.com/news/articles/2025-12-12/bbva-rolls-out-chatgpt-to-almost-all-employees-in-openai-deal",
     links: [
       { label: "Ver artículo de Bloomberg", url: "https://www.bloomberg.com/news/articles/2025-12-12/bbva-rolls-out-chatgpt-to-almost-all-employees-in-openai-deal" },
       { label: "Ver copia de archivo (Bloomberg)", url: "http://archive.today/Hriz6" },
@@ -374,6 +375,7 @@ const RESOURCES = [
     yearContext: "2025.",
     language: "Inglés",
     relevance: "Este material analiza el impacto previsto de la IA sobre la demanda energética mundial y sitúa el desarrollo de estas tecnologías dentro de un contexto económico y de infraestructuras. Ayuda a comprender las implicaciones del crecimiento de los centros de datos.",
+    embedUrl: "https://www.imf.org/en/publications/wp/issues/2025/04/21/power-hungry-how-ai-will-drive-energy-demand-566304",
     link: "https://www.imf.org/en/publications/wp/issues/2025/04/21/power-hungry-how-ai-will-drive-energy-demand-566304"
   },
   {
